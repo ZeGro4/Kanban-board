@@ -6,7 +6,7 @@
 
 Технологии:
 
-ASP.NET Core MVC + Razor или Web API + отдельный Blazor/Frontend (Angular/React — но это уже fullstack)
+ASP.NET Core MVC 
 
 Identity Framework (регистрация, логин, роли)
 
