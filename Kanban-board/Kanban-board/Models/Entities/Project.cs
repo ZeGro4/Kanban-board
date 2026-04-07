@@ -6,14 +6,17 @@ namespace Kanban_board.Models.Entities
     public class Project
     {
         public Guid Id { get;set; }
-        public string Name { get; set; }
+        public required string Name { get; set; }
         public string? Description { get; set; }
 
         public DateTime CreatedAt { get; set; }
 
-        public string CreatedByUserId { get; set; }
+        public required string CreatedByUserId { get; set; }
 
-
+        public ICollection<UserProject> UserProjects { get; set; }
+        public ICollection<ApplicationUser>? ApplicationUsers { get; set; }
+        public ICollection<Board> Boards { get; set; }
+        public ApplicationUser CreatedUser { get; set; }    
         
     }
 }
